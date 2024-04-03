@@ -57,7 +57,7 @@ X_train.shape
 length = 60
 n_features = 1
 model = Sequential()
-model.add(layers.Bidirectional(layers.SimpleRNN(units=60),input_shape=(length,n_features)))
+model.add(layers.SimpleRNN(50,input_shape=(length,n_features)))
 model.add(layers.Dense(1))
 model.compile(optimizer='adam', loss='mse')
 print("Name: DEVADARSHAN A S     Register Number: 212222110007 ")
